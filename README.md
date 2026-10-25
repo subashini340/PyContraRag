@@ -17,7 +17,6 @@ Standard Retrieval-Augmented Generation (RAG) systems often fail when the underl
 4. **Agentic Arbitration**: A LangChain Agent (using Llama 3 via Groq) reasons through the conflict, weighs the ML scores, and generates a final, grounded answer with source citations.
 
 ## 🏗️ Architecture Flow
-```text
 [ User Query ]
       │
       ▼
@@ -33,26 +32,23 @@ Standard Retrieval-Augmented Generation (RAG) systems often fail when the underl
 [ 4. LangChain Agent ] ─────> LLM arbitrates and writes final answer
 
 
-TECH STACK:
+## 🛠️ Tech Stack
 
-   Layer                        Technology Used
-Frontend UI           Streamlit (Custom Glassmorphism Theme)
-Agent Framework       LangChain
-LLM Engine            Llama 3 (via Groq API)
-Conflict Detection    HuggingFace Transformers (DeBERTa-v3-small)
-ML Scoring            XGBoost Regressor
-Vector Database       ChromaDB
-Embeddings            Sentence-Transformers (all-MiniLM-L6-v2)
+Layer Technology Used
+Frontend UI Streamlit (Custom Glassmorphism Theme)
+Agent Framework LangChain
+LLM Engine Llama 3 (via Groq API)
+Conflict Detection HuggingFace Transformers (DeBERTa-v3-small)
+ML Scoring XGBoost Regressor
+Vector Database ChromaDB
+Embeddings Sentence-Transformers (all-MiniLM-L6-v2)
 
-
-
-
-HOW TO RUN LOCALLY:
+## 🚀 How to Run Locally
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/PyContraRAG.git
-cd PyContraRAG
+git clone https://github.com/subashini340/PyContraRag.git
+cd PyContraRag
 
 2. Create a virtual environment & install dependencies:
 
@@ -65,7 +61,7 @@ Create a .env file in the root directory and add your free Groq API key:
 
 GROQ_API_KEY=your_gsk_key_here
 
-4. Ingest Python Documentation (RAG Setup):
+4. Ingest Python Documentation:
 
 python -m src.ingest
 
@@ -77,10 +73,7 @@ python -m src.credibility
 
 python -m streamlit run app/main.py
 
-
-
-
-PROJECT STRUCTURE:
+## 📁 Project Structure
 
 contra-rag/
 ├── app/                  # Streamlit frontend & Custom CSS
@@ -93,9 +86,7 @@ contra-rag/
 ├── models/               # Saved ML Model (.pkl)
 └── requirements.txt      # Dependencies
 
+## 👨‍💻 Author
 
-
-
-AUTHOR:
-
-Subashini E | https://github.com/subashini340 | https://www.linkedin.com/in/subashini-e-bba5a132a/
+Subashini E
+ | https://github.com/subashini340 |https://www.linkedin.com/in/subashini-e-bba5a132a/
