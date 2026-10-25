@@ -33,7 +33,7 @@ Standard Retrieval-Augmented Generation (RAG) systems often fail when the underl
 [ 4. LangChain Agent ] ─────> LLM arbitrates and writes final answer
 
 
-
+TECH STACK:
 
    Layer                        Technology Used
 Frontend UI           Streamlit (Custom Glassmorphism Theme)
@@ -47,7 +47,7 @@ Embeddings            Sentence-Transformers (all-MiniLM-L6-v2)
 
 
 
-How to Run Locally:
+HOW TO RUN LOCALLY:
 
 1. Clone the repository:
 
